@@ -1,0 +1,79 @@
+:root {
+  --text-gray-699: #374151;
+  --text-gray-400: #9ca3af;
+  --text-yellow-500: #eab308;
+  --text-green-500: #22c55e;
+  --text-purple-500: #a855f7;
+  --text-blue-500: #3b82f6;
+
+}
+
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--text-gray-700);
+  /* color */
+}
+
+.token.comment {
+  color: var(--text-gray-400);
+}
+
+.token.punctuation {
+  color: var(--text-gray-700);
+  /* @apply text-gray-700 dark:text-gray-300; */
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  /* @apply text-yellow-500; */
+  color: var(--text-yellow-500)
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  /* @apply text-green-500; */
+  color: var(--text-green-500)
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+ color: var(--text-yellow-500);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {  
+  color: var(--text-purple-500);
+}
+
+.token.function,
+.token.class-name {
+  color: var(--text-blue-500);
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+   color: var(--text-yellow-500);
+}
+
+.prose code[class*='language']::after,
+.prose code[class*='language']::before {
+  display: none;
+}
+.prose code[class*='language'] {
+  font-weight: 500;
+}
